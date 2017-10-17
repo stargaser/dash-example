@@ -1,1 +1,1 @@
-web: gunicorn demographic-app.py:server
+web: gunicorn app.py:server
