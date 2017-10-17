@@ -5,6 +5,8 @@ import plotly.graph_objs as go
 import pandas as pd
 
 app = dash.Dash()
+server = app.server
+server.secret_key = os.environ.get('SECRET_KEY', 'my-secret-key')
 
 df = pd.read_csv(
     'https://gist.githubusercontent.com/chriddyp/'
